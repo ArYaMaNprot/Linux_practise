@@ -1,0 +1,75 @@
+grep command-
+
+grep -n root demo.txt -n flag used here for printing info with line number
+grep -c root demo.txt -c used for printing how many line contains searced 
+pattern.
+grep -i root demo.txt -i used for case insenstive
+grep -o root demo.txt -o used for printing specific pattern word
+grep -v root demo.txt -v used for exlcuding pattern in printing
+grep -w root demo.txt -w used for exact match 
+grep -n -B4 root demo.txt  -B flag used for viewing n lines above the 
+pattern
+grep -n -A3 root demo.txt -A flag used for viewing n lines after the 
+pattern.
+grep -n -C4 root demo.txt -C flag used for viewing n lines before and 
+after the pattern
+grep -n -i "demo pace" demo.txt used for space escaping 
+grep -i "^root" demo.txt ^ used for which containg root in starting
+grep -i "$root" demo.txt $ used for which contains root is last
+command to print the line from 25,35 in a file and find specific pattern- 
+cat -n /etc/passwd |sed '25,35p'|grep -iw "root"
+                                  
+egrep -i 'root|dns|ftp' demo.txt -to search multiple patterns used egrep
+grep -E -ni "root|dns" demo.txt for searching multiple pattern using -E 
+flag
+fgrep root /etc/passwd /etc/group fgrep used here for searching a pattern 
+in multiple files 
+
+grep -Fni root /etc/passwd /etc/group -F used for searchng in multiple 
+files 
+grep -Eni "root|dns" /etc/passwd /etc/group- to search multiple pattern in 
+multiple files use -E flag
+
+grep -R -i root /etc/default used for searching recursively
+ Day6Capsule
+cut command 
+cut <options>  filename
+-c cut by characters 
+-f cut by fields
+-d define delimeter
+we need to use -d while using -f flag
+cut -c1-6 /etc/passwd|tail -2 to get chracter from last from 1 character 
+to last character
+if we used here -c1,3 /etc/passwd
+cut -d ":" -f1,7
+cat /var/log/messages | tail -5 |cut -d " " -f1-4 > /tmp/information
+where not specific indents for delimeter  cut command not used here awk 
+command comes in seen 
+
+awk automatically calculated space 
+df -h |awk '{print $1}'
+df -h |awk '{print $1,$2,$6}'|column -t used for representing data in 
+command
+ifconfig | grep -w inet |awk '{print $1,$2}' OFS='---------->'|sed -n '1p'
+OFS-output field seprator 
+for giving delimeter we use -F 
+awk -F ":" '{print $1,$3}' |head |column -t
+
+zipping files
+
+gzip demo.txt compressing a file
+zcat is used for reading compressed files 
+gunzip demo.txt.gz for unzip a file 
+bzip2 demo.txt
+bzcat is used for reading content of bzip file
+bzmore for reading content of bz extension file
+bunzip2 to unzip bz extension file use command
+tar -cvf  for zipping more then one file tar -cvf sample.txt demo.txt 
+tar -cvjf for zipping file in tbz format
+tar -cvjf demo.tar.tbz demo.txt
+tar -cvzf demo.tar.gz demo.txt z used for gz format 
+
+if we want to view which files are unzip in zip files we can view -tar tvf 
+practise.tar
+for searching  file in zip files- tar tvf practise.tar demo.txt
+

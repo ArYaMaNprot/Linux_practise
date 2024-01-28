@@ -1,0 +1,32 @@
+ append >>
+overwrite karna > 
+File descriptor- is a number that identifies any data source
+{
+	stdin
+	stdout =special files
+	stderr
+}
+when os wants to open a file
+kernel - acess grant
+creates entry in global file table
+location provides of entry
+
+file descriptor identify unique non-negative integer
+for each open file there is at least one file descriptor
+file handlers is windows called them.
+
+location of special files
+       location   fileDescriptor  RedirectSymbol
+input -/dev/stdin  0               0<
+output-/dev/stdout 1               1>
+error-/dev/stderr  2               2>
+null  /dev/null
+cat 0< file.txt  > /dev/stdout
+used to input and create a file without any command
+eg- >name.txt
+we use tee command to print and redirect it to a file
+ls | tee -a test.txt -a flag to append in the end.
+/dev/null is used for errors here
+cat hello 2< /dev/null
+ ./dir.sh > defronix.txt 2>&1
+&1 is used to put it in a file

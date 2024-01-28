@@ -1,0 +1,17 @@
+inode table 
+global file table file descriptor
+file descriptor 
+tac command to used for viewing file from bottom to top
+wc /etc/passwd to show number of words and character
+stream editor -sed 
+sed 'action' filename
+    used for printing in a better manner
+    find and replace
+sed/etc/passwd g refer to global change all refrences of root to sachin
+sed '1s/root/sachin/g' /etc/passwd to change only in first line
+sed '1,4s/root/login/g' /etc/passwd
+sed '1,4s/root/login/gi' /etc/passwd
+sed 's/root/login/2' /etc/passwd to change second occurences
+to search multiple pattern -sed 's/nologin/network/g; s/root/purplexity/g'
+  sed -e 's/nologin/network/g' -e 's/nologin/network/gcat'
+to change in file use command sed -i 's/nologin/network/g' sample.txt
