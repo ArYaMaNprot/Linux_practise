@@ -6,6 +6,7 @@ File descriptor- is a number that identifies any data source
 	stdout =special files
 	stderr
 }
+
 when os wants to open a file
 kernel - acess grant
 creates entry in global file table

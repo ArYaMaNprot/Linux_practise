@@ -10,6 +10,7 @@ grep -v root demo.txt -v used for exlcuding pattern in printing
 grep -w root demo.txt -w used for exact match 
 grep -n -B4 root demo.txt  -B flag used for viewing n lines above the 
 pattern
+
 grep -n -A3 root demo.txt -A flag used for viewing n lines after the 
 pattern.
 grep -n -C4 root demo.txt -C flag used for viewing n lines before and 

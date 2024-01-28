@@ -4,6 +4,7 @@ inode table
 global file table file descriptor
 file descriptor 
 tac command to used for viewing file from bottom to top
+
 wc /etc/passwd to show number of words and character
 stream editor -sed 
 sed 'action' filename
