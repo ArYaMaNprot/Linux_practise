@@ -11,6 +11,7 @@ kernel - acess grant
 creates entry in global file table
 location provides of entry
 
+
 file descriptor identify unique non-negative integer
 for each open file there is at least one file descriptor
 file handlers is windows called them.

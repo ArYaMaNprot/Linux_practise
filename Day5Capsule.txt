@@ -3,6 +3,7 @@ grep command-
 grep -n root demo.txt -n flag used here for printing info with line number
 grep -c root demo.txt -c used for printing how many line contains searced 
 pattern.
+
 grep -i root demo.txt -i used for case insenstive
 grep -o root demo.txt -o used for printing specific pattern word
 grep -v root demo.txt -v used for exlcuding pattern in printing
