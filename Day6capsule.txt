@@ -12,3 +12,7 @@ awk calculates spaces automatically
 df -h | awk '{prit $1,$2,$3 }' print the fields
 column -t command used for
 df -h |grep sda1 |awk '{print $5}' 
+awk '{print $2}' OFS='--------->' OFS=output field seprator
+awk -f ":" '{print $1,$3}' -f flag used here for passing delimeter 
+sleep 10 to sleep for 10sec
+gzip command used for zipping file with .gz extension
