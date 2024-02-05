@@ -6,3 +6,4 @@
 cut c1 /etc/passwd to cut first characters of lines 
 cut -c1-6 /etc/passwd to cut characters continuosly from first to sixth character
 cut -c1,3 /etc/passwd to get first or third character only
+cut -d ":" -f1 to used to cut first field only
