@@ -1,0 +1,26 @@
+to give user permissions and user can have permision
+we entered the permissions in /etc/sudoers
+sudo -l to show which actions user can perform
+hashing algo mostly used in debian based os sha512+salt-$y$j9T
+encryped password-$SqAn.Etw0IqmQLU1CKsqN.$mMqRNDN9s5xUhLlEHc6Jy3a/qqVNUHM4hfIe.YEhSJ5
+last pasword changed date jan 1 1970-19728
+minimum days of password changed-0
+max number of days passwd changed-99999:
+warning days-7
+Expiry days
+Inactive days
+:::
+to define password change warnings you have to add this in /etc/login.defs file
+chage -l user  gives  total  informaion of a user regarding password
+to change or set rule for user password - chage -m 0 -M 15 -W 7 -I 2
+user
+here m for minimum,M for maximum, W for warning days,I for inactive days
+chage -d 0 kali to update password onnext login
+when a user added it has entry in 3 files
+/etc/passwd
+/etc/group
+/etc/shadow
+to disable password for any user
+put !! sign in front of passwd in /etc/shadow file
+usermod -L username- for disabling user 
+usermod -U username to unlock 
