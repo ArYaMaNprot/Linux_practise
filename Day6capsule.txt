@@ -16,3 +16,39 @@ awk '{print $2}' OFS='--------->' OFS=output field seprator
 awk -f ":" '{print $1,$3}' -f flag used here for passing delimeter 
 sleep 10 to sleep for 10sec
 gzip command used for zipping file with .gz extension
+cut command 
+cut <options>  filename
+-c cut by characters 
+-f cut by fields
+-d define delimeter
+we need to use -d while using -f flag
+cut -c1-6 /etc/passwd|tail -2 to get chracter from last from 1 character to last character
+if we used here -c1,3 /etc/passwd
+cut -d ":" -f1,7
+cat /var/log/messages | tail -5 |cut -d " " -f1-4 > /tmp/information
+where not specific indents for delimeter  cut command not used here awk command comes in seen 
+
+awk automatically calculated space 
+df -h |awk '{print $1}'
+df -h |awk '{print $1,$2,$6}'|column -t used for representing data in command
+ifconfig | grep -w inet |awk '{print $1,$2}' OFS='---------->'|sed -n '1p'
+OFS-output field seprator 
+for giving delimeter we use -F 
+awk -F ":" '{print $1,$3}' |head |column -t
+
+zipping files
+
+gzip demo.txt compressing a file
+zcat is used for reading compressed files 
+gunzip demo.txt.gz for unzip a file 
+bzip2 demo.txt
+bzcat is used for reading content of bzip file
+bzmore for reading content of bz extension file
+bunzip2 to unzip bz extension file use command
+tar -cvf  for zipping more then one file tar -cvf sample.txt demo.txt 
+tar -cvjf for zipping file in tbz format
+tar -cvjf demo.tar.tbz demo.txt
+tar -cvzf demo.tar.gz demo.txt z used for gz format 
+
+if we want to view which files are unzip in zip files we can view -tar tvf practise.tar
+for searching  file in zip files- tar tvf practise.tar demo.txt
