@@ -1,0 +1,14 @@
+w - command for viewing user logined in system
+su  command for  for permanently login or providing non login shell
+su - command for login shell
+useradd -m -d /home/users2 -c "This is test user" user2
+ -m flag used here for modifying default permissions  -d for directory and name comes in last
+userdel -r user2 to delete a user 
+by default the primary group is called
+we define secondary group
+groups kali -to check user member of which groups 
+groupadd unix -to add a group
+usermod -a -G UNIX sachin2 to add sachin to others group also
+usermod -g Unix sachin2 to change primary group of user 
+groupmod -n UNICS UNIX to change name of a group
+groupdel used to del group if the group you want to delete then it should not be it's primary group
