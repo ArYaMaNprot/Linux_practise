@@ -1,0 +1,40 @@
+Day9 Capsule
+ Three types of advanced file permsions
+Sticky bit
+Set uid
+Set gid
+
+1. Sticky bit
+    		Used for set for files for which who created file that user can only  delete
+		To add sticky bit 
+		chmod +t /common  +t used for sticky bit + execute permission
+		+T refers to only sticky bit set
+		 Chmod 1777 /commonn 1 used here for setting sticky bit
+		To remove sticky bit we can use chmod 777 /common
+
+2. set gid (sgid)
+
+Chmod g+s  proj90
+
+3. set uid(suid)
+
+ 4) Find command 
+  		find  . -type f -name test1.txt
+		find . -type f -iname test.txt for case sensitive case 
+		find  / -type d -name unix  to search directory in whole partition system
+		find /  -type d -perm 0777 -print 
+	print files only with permissions set to 4000
+find . -perm /4000 
+
+To find particular file permissions and change it’s permissions
+Find . -perm 2644 -print -exec chmod 2777 {} \;
+
+To find empty files in a directory 
+	find / -type d -empty
+       Find / -type f -empty
+To find hidden files 
+	find . -type f  -name “.*”
+To find a files of  a specific 
+ Find . -user user1
+To find files of specific size
+find / -size 50M for 50Mb
