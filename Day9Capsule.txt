@@ -1,0 +1,42 @@
+file permissions
+d -file type
+ - normal file
+d -directory
+l -symbolic link
+b -block file
+c -character file
+s -socket file
+to change owner of a file chown sam test_fule.txt
+to change group of a file chgrp sam test_file.txt
+chown kali:kali to change owner and group both of a file
+read permssion r- 4
+write permission w-2
+execute permssion x-1
+
+debain based permssions 
+022
+fedora based permissions 
+0022
+0 - represents special permissions
+0 - owner permissions
+2 - group owner permissions
+2 - other user permissions
+
+Table for umask values
+0 -read,write,and execute
+1-read and write
+2-read and execute
+3-read only
+4-write and execute
+5-write only
+6-execute only
+7-no permission
+
+umask =022
+max per =666
+how to calculate effective permissions
+666-022=644
+dir ->
+      maximum permissions for dir=777
+how to calculate effective permissions ?
+777 - 022 =755
