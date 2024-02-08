@@ -1,3 +1,13 @@
+vi 
+vim modes:
+  insert mode 
+  command mode
+  
 shift +a to go end of a line 
 press and a new line will be created where you after you want a line
 shift +o to add a new line before a line
+press x TO CUT
+shift +x to cut
+press r -replace
+press xp cut and paste
+
