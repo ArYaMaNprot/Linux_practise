@@ -1,0 +1,1 @@
+shift +a to go end of a line 
