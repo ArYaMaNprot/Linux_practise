@@ -15,3 +15,5 @@ to cut -press 2 times d
 to copy a full line press 2 times y
 press 2dd to cut the two lines from cursor
 press 2pp to paste 2 lines from 
+to move word by word press w in forward direction
+to move word by word press b in backward direction 
