@@ -17,3 +17,9 @@ press 2dd to cut the two lines from cursor
 press 2pp to paste 2 lines from 
 to move word by word press w in forward direction
 to move word by word press b in backward direction 
+to delete a word press dw
+to delete two word press 2dw
+shift +zz to save and exit
+for searching we use /name of keyword top to bottom
+for seacrhinng we ?name of keyword bottom to top
+:r !lsblk for if we want output of a command 
