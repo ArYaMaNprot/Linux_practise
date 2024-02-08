@@ -1,1 +1,3 @@
 shift +a to go end of a line 
+press and a new line will be created where you after you want a line
+shift +o to add a new line before a line
