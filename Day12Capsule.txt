@@ -1,0 +1,1 @@
+locate command use local database of a system to find something
