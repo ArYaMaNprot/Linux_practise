@@ -1,1 +1,5 @@
 variables in linux
+  1) system defined or environment variables
+  2) user defined variables
+  user defined variables
+    
