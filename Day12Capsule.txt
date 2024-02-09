@@ -1,1 +1,3 @@
 locate command use local database of a system to find something
+locate -i --limit 50 *.conf here i used for case sensitivity and limit to limit the files to show 
+first updatedb while finding the file before locating the file.
