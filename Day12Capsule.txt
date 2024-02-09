@@ -12,3 +12,6 @@ apt-get update
 apt-get upgrade
 apt-get clean
 to install package name  apt-get install apache
+apt-get purge <package name.deb> it will also remove dependency 
+to safely upgrade our machine use command aptitude safe-upgrade
+
