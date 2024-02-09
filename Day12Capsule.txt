@@ -1,3 +1,14 @@
 locate command use local database of a system to find something
 locate -i --limit 50 *.conf here i used for case sensitivity and limit to limit the files to show 
 first updatedb while finding the file before locating the file.
+dpkg apt aptitude to manage packages 
+to know files for which packages dependency they installed 
+dpkg -S altdns
+dpkg -i <name of package.deb>
+to remove/uninstall
+dpkg -r <name of package.deb>
+you need to resolve manually while removing through dpkg
+apt-get update
+apt-get upgrade
+apt-get clean
+to install package name  apt-get install apache
