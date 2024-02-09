@@ -19,3 +19,9 @@ aptitude search <package name>
 add-apt-repository <url of repo>
 apt-key add <url of repo>
 apropos apt <url of repo>
+control operators
+  ; --> (eg-date;ls)
+  & --> date & pwd
+  ? --> helps with which helps we will know previous command was successful or not zero for sucessful and 1 for not sucessful
+  && --> 
+  || -->
