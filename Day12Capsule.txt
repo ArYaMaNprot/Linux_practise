@@ -16,3 +16,6 @@ apt-get purge <package name.deb> it will also remove dependency
 apt-get remove <package name.deb> 
 to safely upgrade our machine use command aptitude safe-upgrade
 aptitude search <package name>
+add-apt-repository <url of repo>
+apt-key add <url of repo>
+apropos apt <url of repo>
