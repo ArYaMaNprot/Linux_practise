@@ -3,3 +3,4 @@ variables in linux
   2) user defined variables
   user defined variables
     
+echo $PS1 which tells us which is our shell prompt
