@@ -5,3 +5,4 @@ variables in linux
     
 echo $PS1 which tells us which is our shell prompt
 set command to view how many commands set in our system
+to view and acess a variable across diffrent terminals we export that variable.
