@@ -4,3 +4,4 @@ variables in linux
   user defined variables
     
 echo $PS1 which tells us which is our shell prompt
+set command to view how many commands set in our system
