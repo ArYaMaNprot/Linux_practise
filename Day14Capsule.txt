@@ -12,3 +12,4 @@ then we entered in shell and check for mount  if we found there is ro written th
 then press passwd command and your passwd is changed 
 then reboot from command -exec /sbin/init
 sort command to sort commands alphabetically
+uniq comman to find unique commands first they are also sorted.
