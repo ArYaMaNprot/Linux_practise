@@ -1,1 +1,14 @@
 !! to hit previous command in terminal
+history command to view number of commands
+history -c to clear history 
+press ctrl +r in terminal to search for command in history
+HISTFILE-it holds the name and locations of your bash history file
+HISTFILESIZE- it determines how many commands canbe stored in .bashrc history file
+HISTSIZE-it show the information about how many command you can store in its cache
+steps to when root passwd forgot passwd 
+simple press down keys and then press e 
+go in line in which linux is written remove quiet splash and change from ro ->rw init=/bin/bash
+then we entered in shell and check for mount  if we found there is ro written then fire command mount rw 
+then press passwd command and your passwd is changed 
+then reboot from command -exec /sbin/init
+sort command to sort commands alphabetically
