@@ -1,0 +1,19 @@
+to intsall ssh you need to install it -sudo apt install openssh-server
+to view -service ssh status
+service ssh start
+sudo systemctl start ssh
+ssh_config config file
+sshd_config.d deamon file 
+location for ssh-/etc/ssh
+to connect ssh username@ip address
+to run command without login ssh kali@192.79.9.0 ls
+to share file scp -r /home/metaxone/demo.txt kali@192.168.1.40//home/kali/ in secure mode through ssh
+set passwordless authentication 
+to copy  ssh-copy-id -i ~/.ssh/id_rsa.pub kali@ip address to set passwordless authentication 
+to restrict while login though ssh user can't login as root
+set permitrootlogin :no in sshd-config file
+to change port set port which not used currently
+ssh root@192.168.1.40 -p 5152 after change the port you need to define port
+to set specific users only can acess though ssh command-AllowUsers user1 user2 in file sshd_config 
+to deny users add users to deny specific users command -DenyUsers *@192.168.1.20/24 to deny for specific ip address
+to alllow particular group command-AllowGroups groupname
